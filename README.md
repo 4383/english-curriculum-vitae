@@ -1,8 +1,20 @@
 # Hervé BERAUD Curriculum Vitae (english version)
-This my personal curriculum vitae.
-You can retrieve my personal and professional experience, my personal project.
 
-Current version: 1.0
+## Download
+
+[Latest PDF version](https://github.com/4383/english-curriculum-vitae/blob/master/cv.pdf)
+
+## Overview
+
+My personal curriculum vitae.
+
+You can retrieve:
+
+- my personal and professional experiences
+- my skills and technologies experiences
+- contributions to open source projects
+- personal projects
+- my hobbies
 
 ## Prerequisites
 
@@ -18,10 +30,6 @@ $ sudo apt install texlive-full
 $ xelatex cv.tex
 $ evince cv.pdf
 ```
-
-## Download
-
-[Latest PDF version](https://github.com/4383/english-curriculum-vitae/blob/master/cv.pdf)
 
 ## Credits
 
