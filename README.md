@@ -25,6 +25,10 @@ You can retrieve:
 ## Compile and Usage
 
 ```sh
+docker run -v cv.tex:/app cv
+
+```
+```sh
 $ sudo apt install texlive-xetex
 $ sudo apt install texlive-full
 $ xelatex cv.tex

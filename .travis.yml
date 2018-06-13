@@ -1,0 +1,18 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - pwd
+  - ls
+  - docker pull 4383/english-curriculum-vitae:latest
+  - docker run -v $(pwd):/app 4383/english-curriculum-vitae:latest
+  - ls -la
+
+script:
+  - pwd
+  - ls
+  - hostname
+  - ls -la
+  - xelatex cv.tex
+  - ls -la
