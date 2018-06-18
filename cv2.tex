@@ -1,0 +1,458 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{color}
+\usepackage{xcolor}
+\hypersetup{
+    pdftitle={herve-beraud-cv-en.pdf},
+    pdfauthor={Hervé Beraud},
+    pdfsubject={Hervé Beraud curriculum vitae},
+    pdfkeywords={},
+    colorlinks=false,       % no lik border color
+    allbordercolors=white    % white border color for all
+}
+\addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\header{Hervé }{Beraud}
+    {Python Software Engineer/DevOps Architect}
+
+% Fake text to add separator
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+    \section{Address}
+        Toulouse, France
+        ~
+    \section{Contact}
+        +33.661.840.417
+        \href{mailto:herveberaud.pro@gmail.com}{\textbf{herveberaud.pro@}\\gmail.com}
+        ~
+    \section{About me}
+        year of birth : 1982
+        married, 4 childrens 
+        ~
+    \section{Technologies}
+        \textbf{python}\includegraphics[scale=0.40]{img/5stars.png}
+        \textbf{docker}\includegraphics[scale=0.40]{img/5stars.png}
+        \textbf{shell}\includegraphics[scale=0.40]{img/5stars.png}
+        \textbf{CI/CD}\includegraphics[scale=0.40]{img/5stars.png}
+        \textbf{rpm}\includegraphics[scale=0.40]{img/5stars.png}
+        \textbf{fabric}\includegraphics[scale=0.40]{img/5stars.png}
+        \textbf{jinja2}\includegraphics[scale=0.40]{img/5stars.png}
+        \textbf{ansible}\includegraphics[scale=0.40]{img/4stars.png}
+        \textbf{django}\includegraphics[scale=0.40]{img/4stars.png}
+        \textbf{webhooks}\includegraphics[scale=0.40]{img/4stars.png}
+        \textbf{autobahn}\includegraphics[scale=0.40]{img/4stars.png}
+        \textbf{crosbar.io}\includegraphics[scale=0.40]{img/4stars.png}
+        \textbf{nginx}\includegraphics[scale=0.40]{img/4stars.png}
+        \textbf{html}\includegraphics[scale=0.40]{img/4stars.png}
+        \textbf{openstack}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{flask}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{lxc/lxd}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{swarm}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{wamp}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{tripleO}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{kvm}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{php}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{java}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{c/c++}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{latex}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{rancher}\includegraphics[scale=0.40]{img/2stars.png}
+        \textbf{kubernetes}\includegraphics[scale=0.40]{img/2stars.png}
+        \textbf{tensorflow}\includegraphics[scale=0.40]{img/2stars.png}
+        \textbf{keras}\includegraphics[scale=0.40]{img/2stars.png}
+        \textbf{javascript}\includegraphics[scale=0.40]{img/2stars.png}
+        ~
+    \section{Architectures}
+        \textbf{restful}\includegraphics[scale=0.40]{img/4stars.png}
+        \textbf{services}\includegraphics[scale=0.40]{img/4stars.png}
+        \textbf{ntiers}\includegraphics[scale=0.40]{img/4stars.png}
+        \textbf{soap}\includegraphics[scale=0.40]{img/2stars.png}
+        ~
+    \section{Methodologies}
+        \textbf{Agile}\includegraphics[scale=0.40]{img/5stars.png}
+        \textbf{DevOps}\includegraphics[scale=0.40]{img/5stars.png}
+        \textbf{Lean}\includegraphics[scale=0.40]{img/4stars.png}
+        \textbf{Kanban}\includegraphics[scale=0.40]{img/4stars.png}
+        ~
+\end{aside}
+
+\section{Personal Philosophy}
+    Time is a store of value much higher than any precious currency or
+    material. Throughout our lives time acquires with money, we buy time.
+    My job as DevOps is to automate and industrialize processes,
+    so generate time for team and therefore value.
+
+\section{Awards}
+\begin{entrylist}
+    \entry
+        {2016}
+        {Winner of squad incubator contest}
+        {French annual IT innovation contest}
+        {\emph{Design a DevOps solution for automatizing security scanning on
+        web apps CI/CD workflow and project lifecycle}}
+\end{entrylist}
+
+\section{Contributions to open source projects}
+\begin{entrylist}
+    \entry
+        {automation}
+        {\href{https://github.com/ansible/ansible}{Red Hat - ansible}}
+        {community contributor}
+        {\emph{bugfix, code cleaning, implementing tests}}
+    \entry
+        {api}
+        {\href{https://github.com/ovh/python-ovh}{OVH - official python API}}
+        {community contributor}
+        {\emph{apply python best practices}}
+    \entry
+        {time series}
+        {\href{https://github.com/ovh/python-ovh}{Elastic Search - curator}}
+        {community contributor}
+        {\emph{improve packaging}}
+    \entry
+        {network}
+        {\href{https://github.com/github/octodns}{Github - octodns (official github project)}}
+        {community contributor}
+        {\emph{upgrading python packaging method}}
+    \entry
+        {system}
+        {\href{https://github.com/alpinelinux/aports}{Alpine Linux - aports}}
+        {community contributor}
+        {\emph{package maintaining, proposal new testing packages}}
+    \entry
+        {monitoring}
+        {\href{https://github.com/bleemeo/bleemeo-agent}{Bleemeo - bleemeo-agent}}
+        {community contributor}
+        {\emph{upgrading python packaging method}}
+    \entry
+        {versioning}
+        {\href{https://github.com/git/git}{Git - git}}
+        {community contributor}
+        {\emph{introduce python best practices}}
+    \entry
+        {tooling}
+        {\href{https://github.com/jd/git-pull-request}{Julien Danjou - Git Pull Request}}
+        {community contributor}
+        {\emph{implementing new features}}
+    \entry
+        {framework}
+        {\href{https://github.com/owais/django-webpack-loader}{Django webpack loader}}
+        {community contributor}
+        {\emph{introduce python best practices}}
+    \entry
+        {testing}
+        {\href{https://github.com/regebro/pyroma}{Pyroma}}
+        {community contributor}
+        {\emph{implementing new features}}
+\end{entrylist}
+
+\section{Memberships}
+\begin{entrylist}
+    \entry
+        {community}
+        {\href{https://www.tetalab.org/en}{Tetalab (click to see)}}
+        {Toulouse hacker space}
+        {\emph{Design, share, learn}}
+    \entry
+        {community}
+        {\href{https://www.python.org/psf/}{Python software foundation (click to see)}}
+        {World wide community}
+        {\emph{Support local Python user group, regional workshop, encouraging usages}}
+    \entry
+        {core}
+        {\href{https://github.com/mhackgyver-squad/mhackgyver}{Mhackgyver pentest team (click to see)}}
+        {French pentest team}
+        {\emph{World wide security contests, local events, ctf, share, learn, develop}}
+\end{entrylist}
+
+\newpage
+\section{Experience}
+\begin{entrylist}
+    \entry
+        {03-17 - Now}
+        {Lead cloud DevOps architect}
+        {Squad / Orange OINIS ITE, Toulouse, France}
+        {Architect, design, and deliver technical solutions for automatizing deployment of openstack tripleO platform.
+        Design django webapp for manage openstack configuration, design CI/CD system and infrastructure automation strategy.\\}
+    \entry
+        {09-16 - 03-17}
+        {DevOps architect and Python lead developer}
+        {Squad / CNES, Toulouse, France}
+        {Architect, design, develop and deliver european space program ISIS guidance system. Manage project workflow.\\}
+    \entry
+        {05-16 - Now}
+        {DevOps Technical Leader}
+        {Squad (internal), Toulouse, France}
+        {Team Technical management, manage DevOps community, animate technical events, 
+        create design and setup the squad official software forge. Apply security ehancements and best practices.\\}
+    \entry
+        {04-14 - 04-16}
+        {DevOps architect}
+        {BULL / EDF, Toulouse, France}
+        {Design and develop algorithms, solutions for call center and workload management system. Design and develop multi-channel agent desktop.
+        Create and develop Python/Django webapps for generating, deploye, and maintaince version for C\# project (automatized CI/CD).\\}
+    \entry
+        {09-13 - 03-14}
+        {Embedded Software Engineer}
+        {BULL / French Navy, Aix en Provence, France}
+        {Design continuous integration, design system architecture , AIX5.3 and Unix software.\\}
+    \entry
+        {02-13 - 09-13}
+        {Software Engineer}
+        {BULL / DCNS, Toulon, France}
+        {Design and develop electronic warefare system on the FREMM frigate project.\\}
+    \entry
+        {06-11 - 01-13}
+        {Frontend / Backend Web Developer}
+        {BULL / Virtual-expo, Marseille, France}
+        {Design and development of a world expert online exhibitions website on Linux/Apache/PHP/Zend platform. Design, development of a Python web crawler.\\}
+    \entry
+        {04-11 - 06-11}
+        {System Administrator / Backend Developer}
+        {Distrimag, Arles, France}
+        {Maintain data center environmental and monitoring equipment (IBM AS400). Virtualize physical server. PHP Development of stock managment software.\\}
+    \entry
+        {10-10 - 03-11}
+        {Frontend Web / Backend Developer}
+        {PlusValue SAS, Vitrolles, France}
+        {Management and migration of servers. Development of php web micro-framework. Development of web templates and interfaces. Management of SQL databases.\\}
+    \entry
+        {12-04 - 01-09}
+        {Buisness Owner}
+        {Damofli Fruits \& Legumes, France}
+        {Manage marketing operations, accounting, sales plans, inventory management.\\}
+    \entry
+        {09-01 - 11-04}
+        {Landscape Architect}
+        {Local Council of Martigues, France}
+        {Manage marketing operations, accounting, sales plans, inventory management.\\}
+\end{entrylist}
+
+\begin{aside}
+~
+~
+~
+    \section{Systems}
+        \textbf{fedora}\includegraphics[scale=0.40]{img/5stars.png}
+        \textbf{archlinux}\includegraphics[scale=0.40]{img/5stars.png}
+        \textbf{debian}\includegraphics[scale=0.40]{img/5stars.png}
+        \textbf{ubuntu}\includegraphics[scale=0.40]{img/5stars.png}
+        \textbf{alpine}\includegraphics[scale=0.40]{img/5stars.png}
+        \textbf{rhel}\includegraphics[scale=0.40]{img/4stars.png}
+        \textbf{lfs}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{kali}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{bsd}\includegraphics[scale=0.40]{img/2stars.png}
+        \textbf{windows}\includegraphics[scale=0.40]{img/2stars.png}
+        \textbf{minix}\includegraphics[scale=0.40]{img/1stars.png}
+        ~
+    \section{Networks}
+        \textbf{ssh}\includegraphics[scale=0.40]{img/5stars.png}
+        \textbf{http}\includegraphics[scale=0.40]{img/5stars.png}
+        \textbf{tcp/udp}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{xmpp}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{osi}\includegraphics[scale=0.40]{img/2stars.png}
+        \textbf{sdn}\includegraphics[scale=0.40]{img/2stars.png}
+        ~
+    \section{Databases}
+        \textbf{sqlite}\includegraphics[scale=0.40]{img/4stars.png}
+        \textbf{postgresql}\includegraphics[scale=0.40]{img/4stars.png}
+        \textbf{mysql}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{mariadb}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{oracle}\includegraphics[scale=0.40]{img/2stars.png}
+        ~
+    \section{Tools}
+        \textbf{git}\includegraphics[scale=0.40]{img/5stars.png}
+        \textbf{svn}\includegraphics[scale=0.40]{img/5stars.png}
+        \textbf{jenkins}\includegraphics[scale=0.40]{img/5stars.png}
+        \textbf{vim}\includegraphics[scale=0.40]{img/5stars.png}
+        \textbf{gitlab}\includegraphics[scale=0.40]{img/4stars.png}
+        \textbf{github}\includegraphics[scale=0.40]{img/4stars.png}
+        \textbf{travis-ci}\includegraphics[scale=0.40]{img/4stars.png}
+        \textbf{semaphore}\includegraphics[scale=0.40]{img/4stars.png}
+        ~
+    \section{Security}
+        \textbf{chroot}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{selinux}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{nmap}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{owasp}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{iptables}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{fail2ban}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{metasploit}\includegraphics[scale=0.40]{img/3stars.png}
+        \textbf{fuzzing}\includegraphics[scale=0.40]{img/2stars.png}
+        \textbf{iso27001}\includegraphics[scale=0.40]{img/2stars.png}
+        ~
+    \section{Languages}
+        \textbf{French}\includegraphics[scale=0.40]{img/5stars.png}
+        \textbf{English}\includegraphics[scale=0.40]{img/3stars.png}
+        ~
+\end{aside}
+
+\newpage
+
+\section{Personal projects}
+\begin{entrylist}
+    \entry
+        {2018}
+        {\href{https://github.com/4383/transcendental}{Transcendental - Deep learning image recognition (click to see)}}
+        {Personal project}
+        {\emph{python, tensorflow, keras, git, pbr, github, pypi, vim}}
+    \entry
+        {2018}
+        {\href{https://github.com/gr0und-s3ct0r/niet}{Niet - Parse yaml/json file from shell (click to see)}}
+        {Personal project}
+        {\emph{python, git, pbr, github, pypi, vim}}
+    \entry
+        {2017}
+        {\href{https://github.com/gr0und-s3ct0r/cerber}{Cerber - seccomp docker profil generator (click to see)}}
+        {Personal project}
+        {\emph{python, git, pbr, github, pypi, vim, syscalls, docker}}
+    \entry
+        {2017}
+        {\href{https://github.com/sweet-sinatra/kvmanage/}{KVManage - automatized kvm deployment (click to see)}}
+        {Community project}
+        {\emph{ansible, ubuntu, vim, github, kvm, git}}
+    \entry
+        {2017}
+        {\href{https://github.com/gr0und-s3ct0r/apkbuild}{Apkbuild - build environment for apk (click to see)}}
+        {Personal project}
+        {\emph{docker, docker hub, vim, github, alpine linux, alpine sdk, git}}
+    \entry
+        {2016}
+        {\href{https://github.com/4383/machine}{Machine - development environment (click to see)}}
+        {Personal project}
+        {\emph{docker, docker hub, ubuntu, vim, git}}
+    \entry
+        {2016}
+        {\href{https://github.com/4383/Botanick}{Botanick - web application for collect emails (click to see)}}
+        {Personal project}
+        {\emph{docker, python, flask, git, github, travis-ci, docker hub, git}}
+    \entry
+        {2016}
+        {\href{https://github.com/mhackgyver-squad/porno-king}{Port Knocking Sequence Discovery Scanner (click to see)}}
+        {Personal project}
+        {\emph{docker, python, git, github, docker hub, git}}
+    \entry
+        {2016}
+        {\href{https://github.com/mhackgyver-squad/mhackgyver}{Mhackgyver official repository (click to see)}}
+        {Community project}
+        {\emph{Create and maintain tools for mhackgyver pentest team, git}}
+    \entry
+        {2016}
+        {\href{https://hub.docker.com/r/4383/discosub}{Discosub Dockerized Security Scanner (click to see)}}
+        {Personal project}
+        {\emph{docker, python, docker hub, travis-ci, pypi, github, git, tor, ubuntu}}
+    \entry
+        {2016}
+        {\href{https://hub.docker.com/r/4383/system-service-footprint}{Nmap Dockerized Security Scanner (click to see)}}
+        {Personal project}
+        {\emph{docker, docker hub, github, git, nmap, tor, ubuntu}}
+    \entry
+        {2016}
+        {\href{https://hub.docker.com/r/4383/director}{Director Dockerized Security Scanner (click to see)}}
+        {Personal project}
+        {\emph{docker, docker hub, github, git, dirb, tor, ubuntu}}
+    \entry
+        {2016}
+        {\href{https://hub.docker.com/r/4383/irc-server}{Dockerized IRC server (click to see)}}
+        {Personal project}
+        {\emph{docker, docker hub, github, git, ircd-irc2, ubuntu}}
+    \entry
+        {2015}
+        {\href{http://pypi.python.org/pypi/barcode-generator/0.1rc15}{Barcode Generator (click to see)}}
+        {Personal project}
+        {\emph{python 3, svg, git}}
+    \entry
+        {2013}
+        {\href{https://github.com/4383/fabric-debian/}{Security Best Practices Automatic Setup (click to see)}}
+        {Personal project}
+        {\emph{python, iptables,  debian 6, port-knocking, fail2ban, postgresql, nginx}}
+    \entry
+        {2012}
+        {\href{http://github.com/4383/battle-story/}{Battle-Story Video Game (click to see)}}
+        {Personal project}
+        {\emph{python, pygame, git, github, vim}}
+\end{entrylist}
+
+\begin{flushright}
+    \emph{More projects at https://github.com/4383}
+\end{flushright}
+
+\begin{aside}
+~
+~
+~
+    \section{Character}
+        Passionate
+        Self-educated
+        Autonomous
+        Curious
+        Pragmatic
+        ~
+    \section{Personal Skills}
+        \includegraphics[scale=0.62]{img/personal.png}
+        ~
+    \section{Social (click)}
+        \href{http://herve.beraud.ovh/}{personal website}
+        \href{https://github.com/4383}{github: 4383}
+        \href{https://hub.docker.com/r/4383}{dockerhub: 4383}
+        \href{https://warehouse.python.org/user/4383/}{pypi: 4383}
+        \href{https://twitter.com/4383hberaud}{twitter: 4383hberaud}
+        ~
+    \section{Hobbies}
+        family
+        computers
+        electronic
+        sport
+        psychology
+        traveling
+        mathematics
+        artificial intelligence
+        physic
+        philosophy
+\end{aside}
+
+\newpage
+\section{Education}
+\begin{entrylist}
+    \entry
+        {2010 - now}
+        {Engineer Degree in Computer Science}
+        {CNAM Aix en Provence, France}
+        {Curriculum information systems.\\
+        Main subjects: Systems \& Software Architecture and Security,
+        Urbanism for Evolving Systems.\\}
+    \entry
+        {2009 - 2010}
+        {BTEC Higher National Diploma in Software Development}
+        {AFPA Istres, France}
+        {Main subjects: Software Architecture, Modeling Tools (Merise, UML).\\}
+    \entry
+        {1999 - 2001}
+        {BTEC National Diploma in Landscape Architect}
+        {Lycée Fontlongue Miramas, France}
+        {Agricultural college.\\
+        Main subjects: Design Public Landscape.\\}
+    \entry
+        {1997 - 1999}
+        {BTEC First Diploma in Nursery Gardener}
+        {Lycée Fontlongue Miramas, France}
+        {Agricultural college.\\
+        Main subjects: Cultivating, Harvesting, Transplanting Trees, Shrubs or Plants.}
+\end{entrylist}
+
+
+~
+\begin{flushright}
+    \emph{Latest update - March, 2018}
+\end{flushright}
+
+\end{document}
